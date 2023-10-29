@@ -4,7 +4,7 @@ The DLL file `mydll.dll` exports two functions:
 
 In C-notation:
   ```c
-  char *RenderMustache(char *template, char* jsonStr);
+  char *RenderMustache(char *template, char *jsonStr);
   void MustacheFree(char *str);
   ```
 

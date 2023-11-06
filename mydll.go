@@ -26,14 +26,14 @@ func render(template, jsonStr string) string {
   return parsedStr
 }
 
-//export RenderMustache
-func RenderMustache(template, jsonStr *C.char) *C.char {
+//export RenderMustacheCdecl
+func RenderMustacheCdecl(template, jsonStr *C.char) *C.char {
   parsedStr := render(C.GoString(template), C.GoString(jsonStr))
   return C.CString(parsedStr)
 }
 
-//export MustacheFree
-func MustacheFree(str *C.char) {
+//export MustacheFreeCdecl
+func MustacheFreeCdecl(str *C.char) {
   C.free(unsafe.Pointer(str))
 }
 

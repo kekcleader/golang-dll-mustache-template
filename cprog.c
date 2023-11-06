@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "mydll.h"
+#include "mydllwrapper.h"
 
 int main() {
   printf("HELLO, THIS IS DLL TEST.\n");

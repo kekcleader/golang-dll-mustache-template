@@ -72,5 +72,5 @@ To compile the test program, type:
 
 To run it, type:
   ```
-  a.exe
+  cprog.exe
   ```
